@@ -78,7 +78,7 @@ let cNames = names.filter(name => {
     return name.charAt(0).toUpperCase() === "C";
 });
 
-console.log(cNames);
+// console.log(cNames);
 
 let upper = function(word) {
     return word.toUpperCase();
@@ -86,6 +86,16 @@ let upper = function(word) {
 
 let bigNames = names.map(upper);
 
-console.log(names);
+// console.log(names);
 
-console.log(bigNames);
+// console.log(bigNames);
+
+let numbers = [17, 3, 2, 20];
+
+const reducer = function(accumulator, nextNum) {
+    return accumulator + nextNum;
+}
+
+let totalCount = numbers.reduce(reducer, 0);
+
+console.log(totalCount);
